@@ -644,8 +644,8 @@ footer::before {
 }
 
 .download-btn::before {
-    content: '↓';
-    font-size: 1.2rem;
+    content: '📄';
+    margin-right: 8px;
 }
 
 .nav-links .download-btn {
@@ -661,5 +661,141 @@ footer::before {
     
     .nav-links .download-btn {
         margin: 1rem 0;
+    }
+}
+
+/* Certificate Button Styles */
+.certificate-btn {
+    background: linear-gradient(45deg, #64FFDA, #40A9FF);
+    color: #0A192F;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.certificate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
+}
+
+.certificate-btn::before {
+    content: '🏆';
+    margin-right: 8px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: rgba(17, 34, 64, 0.95);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(64, 169, 255, 0.2);
+    border-radius: 15px;
+    margin: 5% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+.close {
+    color: #64FFDA;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close:hover {
+    color: #40A9FF;
+    transform: scale(1.1);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(64, 169, 255, 0.2);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-header h3 {
+    color: #64FFDA;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.modal-body {
+    color: #E6F1FF;
+    line-height: 1.6;
+}
+
+.certificate-placeholder {
+    background: rgba(64, 169, 255, 0.1);
+    border: 2px dashed rgba(64, 169, 255, 0.3);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.certificate-placeholder img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Certificate list item styling */
+#certifications .vistara-card li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(64, 169, 255, 0.1);
+}
+
+#certifications .vistara-card li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    #certifications .vistara-card li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .certificate-btn {
+        align-self: flex-start;
     }
 }

@@ -51,7 +51,7 @@
             </p>
             <div class="personal-details">
                 <h3>Personal Details</h3>
-                <p><strong>Location:</strong> Durgapur</p>
+                <p><strong>Current Location:</strong> Durgapur</p>
                 <p><strong>Date of Birth:</strong> June 19, 2005</p>
                 <p><strong>Gender:</strong> Male</p>
             </div>
@@ -71,11 +71,13 @@
                 <h3>Class XII</h3>
                 <p>West Bengal Council Of Higher Secondary Education</p>
                 <p>92.6% in 2022</p>
+                <a class="btn certificate-btn" href="HS_result.jpg" target="_blank">View Certificate</a>
             </div>
             <div class="vistara-card">
                 <h3>Class X</h3>
                 <p>West Bengal Board Of Secondary Education</p>
                 <p>84.43% in 2020</p>
+                <a class="btn certificate-btn" href="Madhyamik.jpg" target="_blank">View Certificate</a>
             </div>
         </div>
     </section>
@@ -84,8 +86,18 @@
     <section id="certifications">
         <h2>Certifications</h2>
         <ul class="vistara-card">
-            <li>Effective Writing, Issued By IIT Roorkee</li>
-            <li>Problem Solving Through Programming In C, Issued By IIT Kharagpur</li>
+            <li>
+                Effective Writing, Issued By IIT Roorkee
+                <a class="btn certificate-btn" href="Effective Writing.jpg" target="_blank">View Certificate</a>
+            </li>
+            <li>
+                Problem Solving Through Programming In C, Issued By IIT Kharagpur
+                <a class="btn certificate-btn" href="1684762207262.jpg" target="_blank">View Certificate</a>
+            </li>
+            <li>
+                Participation Certificate in NASA International Space Apps Challenge 2024 — Galactic Problem Solver
+                <a class="btn certificate-btn" href="NASA Space Apps Challenge.pdf" target="_blank">View Certificate</a>
+            </li>
         </ul>
     </section>
 
@@ -94,13 +106,18 @@
         <h2>Internships</h2>
         <div class="internship-content">
             <div class="vistara-card">
-                <h3>Data Science Virtual Internship & Training</h3>
+                <h3>Data Science Virtual Internship & Training at Zidio DEVELOPMENT</h3>
                 <p><strong>Duration:</strong> 3 months</p>
                 <ul>
                     <li>Completed hands-on training in data analysis, data cleaning, and machine learning.</li>
                     <li>Worked on real-world datasets to build predictive models and end-to-end projects.</li>
                     <li>Gained practical experience with Python, Pandas, NumPy, scikit-learn, and data visualization tools.</li>
+                    <li>Comprehensive training in data science fundamentals and advanced techniques, including deep learning, NLP, big data analytics, and industry best practices.</li>
                 </ul>
+                <div class="button-group">
+                    <a class="btn certificate-btn" href="Certificate.pdf" target="_blank">View Internship Completion Certificate</a>
+                    <a class="btn certificate-btn" href="Tranning Certificate.pdf" target="_blank">View Training Completion Certificate</a>
+                </div>
             </div>
             <div class="vistara-card">
                 <h3> Data Science Virtual Internship at Next24Tech</h3>
@@ -111,6 +128,7 @@
                     <li>Integrated algorithm into an autonomous driving system.</li>
                     <li>Collaborated with teams and documented outcomes.</li>
                 </ul>
+                <a class="btn certificate-btn" href="PRADIPTA KHAN  Internship Certificate Next24tech.jpg" target="_blank">View Certificate</a>
             </div>
             <div class="vistara-card">
                 <h3>Data Science Virtual Internship at CodesOnBytes</h3>
@@ -119,6 +137,7 @@
                     <li>Developed data science skills.</li>
                     <li>Received Completion Certificate and Letter of Recommendation.</li>
                 </ul>
+                <a class="btn certificate-btn" href="WhatsApp Image 2025-06-28 at 20.36.28_c3224f2d.jpg" target="_blank">View Certificate</a>
             </div>
         </div>
     </section>
@@ -177,8 +196,8 @@
                     - Created visualizations for TCS.<br>
                     - Prepared questions for client leadership.<br>
                     - Built visuals for executive decision-making.
+                    <a class="btn certificate-btn" href="MyXvBcppsW2FkNYCX_Tata Group_bmZckotbY3b4E4hBj_1723303264150_completion_certificate (1).pdf" target="_blank">View Certificate</a>
                 </p>
-                <p><strong>Languages:</strong> English (Read/Write), Bangla (Both), Hindi (Spoken)</p>
             </div>
         </div>
     </section>
@@ -201,6 +220,22 @@
             </form>
         </div>
     </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h3 id="modalTitle">Certificate</h3>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <div class="certificate-placeholder">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iMTAiIGZpbGw9IiM2NEZGRkEiIG9wYWNpdHk9IjAuMiIvPgo8cGF0aCBkPSJNMzAgMzBIMTcwVjcwSDMwVjMwWiIgZmlsbD0iIzY0RkZGQSIgb3BhY2l0eT0iMC4zIi8+CjxwYXRoIGQ9Ik00MCA0MEg2MFY2MEg0MFY0MFoiIGZpbGw9IiM2NEZGRkEiLz4KPC9zdmc+" alt="Certificate Icon">
+                    <p id="modalMessage">Certificate details will be displayed here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
